@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- daisyUI link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="poppins bg-blue-50 -mt-6">
+    <header class="pt-6">
+      <nav>
+        <div
+          class="w-[1150px] navbar bg-white border-none rounded-lg mt-5 ml-14"
+        >
+          <div class="flex-none lg:hidden">
+            <label
+              for="my-drawer-3"
+              aria-label="open sidebar"
+              class="btn btn-square btn-ghost"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block w-6 h-6 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
+          <div class="flex-1 px-2 mx-2 gap-2">
+            <img class="h-8 w-8" src="assets/logo.png" alt="devboard" />
+            <h1 class="text-xl">
+              Dev<span class="text-[#00303C] font-extrabold">Board</span>
+            </h1>
+          </div>
+          <div id="blog-btn" class="pr-3">
+            <button  class="btn btn-primary text-white">Back To Desk</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+     
+    <main>
+        <h1 class="mt-4 items-center text-center font-bold text-xl">Blogs</h1>
+
+        <section class="w-[1150px] bg-white border-none mt-5 ml-14 mb-3"> 
+            <h3 class="border-b-2 pt-3 pl-3 pb-3 text-lg font-semibold">Question-1: What are the different ways to select an element in the DOM?</h3> 
+
+            <p class="pt-3 pl-3 pb-3 text-sm text-gray-400">There are some different ways to select elements in the DOM using JavaScript. I can select element by its class name, by its ID, by Tag Name, by Name attribute, by query selector. But by query selector and by Id name is used most.</p>
+            
+        </section>
+
+        <section class="w-[1150px] bg-white border-none mt-5 ml-14 mb-3"> 
+            <h3 class="border-b-2 pt-3 pl-3 pb-3 text-lg font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3> 
+
+            <p class="pt-3 pl-3 pb-3 text-sm text-gray-400">We use innerHTML when we need inserting or modifying HTML content dynamically. Again we use innerText when we have to only visible text, ignoring hidden elements. TextContent is used  when we want all text, including hidden text, and to avoid parsing HTML.</p>
+            
+        </section>
+
+        <section class="w-[1150px] bg-white border-none mt-5 ml-14 mb-3"> 
+            <h3 class="border-b-2 pt-3 pl-3 pb-3 text-lg font-semibold">Question-3: What is event delegation in the DOM?</h3> 
+
+            <p class="pt-3 pl-3 pb-3 text-sm text-gray-400">Event delegation is a js systemic method to handle all childs with one function.</p>
+            
+        </section>
+
+        <section class="w-[1150px] bg-white border-none mt-5 ml-14 mb-3"> 
+            <h3 class="border-b-2 pt-3 pl-3 pb-3 text-lg font-semibold">Question-4: What is event bubbling in the DOM?</h3> 
+
+            <p class="pt-3 pl-3 pb-3 text-sm text-gray-400">Event bubbling is like a fish bubble mechanism. When we trigger on a target it bubbles from child to parents.</p>
+            
+        </section>
+
+        <section class="w-[1150px] bg-white border-none mt-5 ml-14 mb-3"> 
+            <h3 class="border-b-2 pt-3 pl-3 pb-3 text-lg font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h3> 
+
+            <p class="pt-3 pl-3 pb-3 text-sm text-gray-400">To create a new HTML element we can use document.createElement(). To  add an Element to the DOM we can use appendChild(). And to remove a specific child we can use removeChild() but for removing an element directly we can use remove(). </p>
+            
+        </section>
+
+    </main>
+
+    <script src="blog.js"></script>
+
+</body>
+</html>
