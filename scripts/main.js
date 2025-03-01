@@ -30,7 +30,7 @@ function updateDate() {
   ];
   
   const allId = ["day", "daynum", "month", "year"];
-  // return value array with number as a index
+ 
   const val = [dayWeek[dayName], dayNum, months[month], year];
   for (let i = 0; i < allId.length; i++) {
     document.getElementById(allId[i]).firstChild.nodeValue = val[i];
@@ -63,12 +63,16 @@ updateDate();
             alert("Congrats!! You have completed all the task.");
         }
        
+      //  Activity log
         
-
-        let activityLog = document.querySelector(".activity-log"); 
-        let p = document.createElement("p");
+        const taskCard = event.target.closest(".card-body");
+        const taskName = taskCard.querySelector(".font-semibold").innerText;
+        const now = new Date();
+        const timeOnly = now.toLocaleTimeString();
+        const activityLog = document.querySelector(".activity-log"); 
+        const p = document.createElement("p");
         p.innerText = `
-        You have completed the task $(taskName) at ${new Date().toLocaleString()}
+        You have completed the task ${taskName} at ${timeOnly}
         `;
         activityLog.appendChild(p);
 
