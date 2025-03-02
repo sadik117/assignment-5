@@ -62,6 +62,7 @@ updateDate();
         if (parseInt(assignedTasks.innerText) === 0){
             alert("Congrats!! You have completed all the task.");
         }
+      
        
       //  Activity log
         
@@ -75,6 +76,9 @@ updateDate();
         You have completed the task ${taskName} at ${timeOnly}
         `;
         activityLog.appendChild(p);
-
-  })
-  }
+        
+        document.getElementById("clear-btn").addEventListener("click",function(){
+          p.innerText = '';
+        })
+      })
+    }
